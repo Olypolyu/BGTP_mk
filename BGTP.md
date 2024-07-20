@@ -79,29 +79,30 @@ This is a example of a simple GUI that says "Hello Word" over a white backgroud.
 ```json
 [
         {
-                "class" = "Minecraft$inventory.background",
-                "parent = "Minecraft$window.center",
-                "id" = "BGTP$demos.empty_container",
-                "offset" = {
-                        "x" = 50,
-                        "y"= -3,
+                "class": "Minecraft$inventory.background",
+                "parent": "Minecraft$window.center",
+                "id": "BGTP$demos.empty_container",
+                "offset": {
+                        "x": 50,
+                        "y": -3,
                 },
-                "args" = {
-                        "x_size" = 176,
-                        "y_size" = 86,
+                "args": {
+                        "x_size":176,
+                        "y_size":86,
+                }
+        },
+        {
+                "class": "Minecraft$base.text",
+                "parent": "BGTP$demos.empty_container",
+                "id": "BGTP$demos.empty_container.text",
+                "offset":{
+                        "x": 50,
+                        "y": 0
+                },
+                "args": {
+                        "content":"Hello World"
                 }
         }
-        {
-                "class" = "Minecraft$base.text",
-                "parent = "BGTP$demos.empty_container",
-                "id" = "BGTP$demos.empty_container.text",
-                "offset" = {
-                        "x" = 50,
-                        "y"= 0
-                },
-                "args" = {
-                        "content" = "Hello World"
-                }
 ]
 ```
 
